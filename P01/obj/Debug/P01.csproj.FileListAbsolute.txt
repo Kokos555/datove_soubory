@@ -9,3 +9,14 @@ G:\Novotný\PRG\Datové soubory v C#\Soubory v C\P01\obj\Debug\P01.csproj.Genera
 G:\Novotný\PRG\Datové soubory v C#\Soubory v C\P01\obj\Debug\P01.csproj.CoreCompileInputs.cache
 G:\Novotný\PRG\Datové soubory v C#\Soubory v C\P01\obj\Debug\P01.exe
 G:\Novotný\PRG\Datové soubory v C#\Soubory v C\P01\obj\Debug\P01.pdb
+G:\Novotný\PRG\Datové soubory v C#\P01\bin\Debug\P01.exe.config
+G:\Novotný\PRG\Datové soubory v C#\P01\bin\Debug\P01.exe
+G:\Novotný\PRG\Datové soubory v C#\P01\bin\Debug\P01.pdb
+G:\Novotný\PRG\Datové soubory v C#\P01\obj\Debug\P01.csproj.AssemblyReference.cache
+G:\Novotný\PRG\Datové soubory v C#\P01\obj\Debug\P01.csproj.SuggestedBindingRedirects.cache
+G:\Novotný\PRG\Datové soubory v C#\P01\obj\Debug\P01.Form1.resources
+G:\Novotný\PRG\Datové soubory v C#\P01\obj\Debug\P01.Properties.Resources.resources
+G:\Novotný\PRG\Datové soubory v C#\P01\obj\Debug\P01.csproj.GenerateResource.cache
+G:\Novotný\PRG\Datové soubory v C#\P01\obj\Debug\P01.csproj.CoreCompileInputs.cache
+G:\Novotný\PRG\Datové soubory v C#\P01\obj\Debug\P01.exe
+G:\Novotný\PRG\Datové soubory v C#\P01\obj\Debug\P01.pdb
