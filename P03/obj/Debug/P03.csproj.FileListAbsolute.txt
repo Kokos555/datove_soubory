@@ -1,0 +1,11 @@
+G:\Novotný\PRG\Datové soubory v C# 2\P03\bin\Debug\P03.exe.config
+G:\Novotný\PRG\Datové soubory v C# 2\P03\bin\Debug\P03.exe
+G:\Novotný\PRG\Datové soubory v C# 2\P03\bin\Debug\P03.pdb
+G:\Novotný\PRG\Datové soubory v C# 2\P03\obj\Debug\P03.csproj.AssemblyReference.cache
+G:\Novotný\PRG\Datové soubory v C# 2\P03\obj\Debug\P03.csproj.SuggestedBindingRedirects.cache
+G:\Novotný\PRG\Datové soubory v C# 2\P03\obj\Debug\P03.Form1.resources
+G:\Novotný\PRG\Datové soubory v C# 2\P03\obj\Debug\P03.Properties.Resources.resources
+G:\Novotný\PRG\Datové soubory v C# 2\P03\obj\Debug\P03.csproj.GenerateResource.cache
+G:\Novotný\PRG\Datové soubory v C# 2\P03\obj\Debug\P03.csproj.CoreCompileInputs.cache
+G:\Novotný\PRG\Datové soubory v C# 2\P03\obj\Debug\P03.exe
+G:\Novotný\PRG\Datové soubory v C# 2\P03\obj\Debug\P03.pdb

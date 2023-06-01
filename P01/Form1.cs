@@ -30,7 +30,7 @@ namespace P01
                         {
                             try
                             {
-                                int cisla = Convert.ToInt32(sr.ReadLine());
+                                double cisla = Convert.ToDouble(sr.ReadLine());
                                 listBox1.Items.Add(cisla);
                                 bw.Write(cisla);
                             }
@@ -46,7 +46,7 @@ namespace P01
                         fs.Seek(0, SeekOrigin.Begin);
                         while (br.BaseStream.Position < br.BaseStream.Length)
                         {
-                            int x = br.ReadInt32();
+                            double x = br.ReadDouble();
                             listBox2.Items.Add(x);
                         }
                     }
