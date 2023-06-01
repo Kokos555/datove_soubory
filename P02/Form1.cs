@@ -20,14 +20,33 @@ namespace P02
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FileStream fs = new FileStream("cisla.dat", FileMode.Open, FileAccess.Read);
-            using (BinaryReader br = new BinaryReader(fs))
+            if (openFileDialog1.ShowDialog() == DialogResult.OK) {
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK) { 
+                    string jmeno = openFileDialog1.FileName;
+                    FileStream fs = new FileStream(jmeno, FileMode.Open, FileAccess.Read);
+                    using (BinaryReader br = new BinaryReader(fs))
+                    {
+                        using (StreamWriter sw = new StreamWriter(saveFileDialog1.FileName))
+                        {
+                            while (br.BaseStream.Position < br.BaseStream.Length) { 
+                                int x = br.ReadInt32();
+                                listBox1.Items.Add(x);
+                                sw.WriteLine(x);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (StreamReader sr = new StreamReader(saveFileDialog1.FileName))
             {
-                int x = br.ReadInt32();
-                using (StreamWriter sw = new StreamWriter("cisla.txt"))
+                while (!sr.EndOfStream)
                 {
-                    while ()
-                    sw.Write(x);
+                    string x = sr.ReadLine();
+                    listBox2.Items.Add(x);
                 }
             }
         }
