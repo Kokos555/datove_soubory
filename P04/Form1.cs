@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -50,7 +51,6 @@ namespace P04
                             max = x;
                             pos2 = br.BaseStream.Position;
                         }
-                        listBox1.Items.Add(x);
                     }
                     br.BaseStream.Position -= 4;
                     bw.Write(max);
@@ -70,7 +70,38 @@ namespace P04
                 while (br.BaseStream.Position < br.BaseStream.Length)
                 {
                     x = br.ReadInt32();
-                    listBox2.Items.Add(x);
+                    listBox1.Items.Add(x);
+                }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FileStream fs = new FileStream("cisla.dat", FileMode.Open, FileAccess.Read);
+            FileStream fs2 = new FileStream("prvocisla.dat", FileMode.Create, FileAccess.ReadWrite);
+            int x;
+            using (BinaryReader br = new BinaryReader(fs))
+            {
+                using (StreamWriter sw = new StreamWriter("provocisla.txt"))
+                {
+                    using(BinaryWriter bw = new BinaryWriter(fs2)) { 
+                        while (br.BaseStream.Position < br.BaseStream.Length)
+                        {
+                            x = br.ReadInt32();
+                            bool prvocislo = true;
+                            if (x == 1 || x > 2 && x % 2 == 0) prvocislo = false;
+                            else for (int delitel = 3; delitel <= Math.Sqrt(x) && prvocislo; delitel += 2)
+                            {
+                                if (x % delitel == 0) prvocislo = false;
+                            }
+                            if (prvocislo)
+                            {
+                                bw.Write(x);
+                                sw.WriteLine(x);
+                                listBox2.Items.Add(x);
+                            }
+                        }
+                    }
                 }
             }
         }
