@@ -1,0 +1,5 @@
+68;Karel;Pavlon;M;187;78
+
+14;Vit;Novotny;M;178;65
+41;Simon;Dockal;M;a167;42
+14;Marika;Pecuchova;Z;175;69
